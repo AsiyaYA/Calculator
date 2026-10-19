@@ -4,19 +4,11 @@ def add(a, b):
 def subtract(a, b):
     return a - b  
 
-git add README.md REQUIREMENTS.md calculator.py
-git commit -m "Add addition and subtraction function"
-git status
-
 def multiply(a, b):
     return a * b
 
 def divide(a, b):
     return a / b
-
-git diff
-git add calculator.py
-git commit -m "Add multiply and divide functions"
 
 def main():
     while True:
@@ -28,7 +20,7 @@ def main():
         elif op == "-":
             print("Result:", subtract(a, b))
         elif op == "*":
-            print("Result:", multipy(a, b))
+            print("Result:", multiply(a, b))
         elif op == "/":
             print("Result:", divide(a, b))
         else:
@@ -36,4 +28,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
