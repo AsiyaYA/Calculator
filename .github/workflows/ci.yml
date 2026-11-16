@@ -1,7 +1,7 @@
 name: Calculator CI
 
 on:
-  push: 
+  push:
     branches: [main]
   pull_request: 
 permissions:
@@ -21,3 +21,4 @@ jobs:
         run: python -m pip install -r requirements-dev.txt
       - name: Run the tests
         run: python -m pytest -v
+        
